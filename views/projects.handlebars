@@ -1,0 +1,43 @@
+<div class="center content projects">
+	<div class="contain-back1">
+		<div class="back1" style="background-image:url(/images/projects/{{data.back}});">
+			<a href="/#work" class="go-back">
+				<i class="fa fa-arrow-left"></i>
+			</a>			
+			<h1 class="fade-in-up">{{data.name}}</h1>
+			<h2 class="fade-in-up">{{data.year}}</h2>
+			<h2 class="fade-in-up">{{data.en.type}}</h2>
+		</div>
+	</div>
+		
+
+	<div class="content center description">
+		<h2>Description</h2>
+		<p>{{{data.en.description}}}</p>
+	</div>
+
+	<div class="separator"></div>
+
+	<div id="skills">
+		<h2>Skills</h2>
+		<div class="container-icon projects fade-in-up">
+			<div class="icon">
+				<i class="fa fa-code"></i>
+			</div>
+			<ul class="skills">{{#each data.skills}}
+				<li class="fade-in-up delay-05s">{{this}}</li>
+				{{/each}}			
+			</ul>
+		</div>
+
+		
+	</div>
+	
+	<div class="separator"></div>
+	<div class="center content showcase">
+		{{#each data.photos}}
+		<img src="/images/projects/showcase/{{this}}" alt="">
+		{{/each}}
+	</div>
+	
+</div>

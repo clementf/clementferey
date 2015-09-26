@@ -1,0 +1,144 @@
+.projects{
+	.go-back{
+		cursor: pointer;
+		border-radius: 50%;
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		position: absolute;
+		z-index: 5;
+		@include transition(background-color 0.35s ease-in);
+		left: 20px;
+		top: 20px;
+		.fa-arrow-left{
+			margin: 10px;
+			font-size: 2em;
+			color:$white;
+			font-weight: lighter;
+			vertical-align: sub;
+		}
+
+
+	}
+	.go-back:hover{
+		background-color: rgba(240,240,240,0.7);
+		.fa-arrow-left{
+			color:$blue;
+		}
+	}	
+
+	.back1{
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;		
+		background-size:cover;
+		background-position:center center;
+
+		height: 350px;	
+		color:$white;
+
+		h1, h2{
+			margin: 150px 30px;
+			font-weight: lighter;
+			position: relative;
+			display: inline-block;
+			font-family: $normalFont;
+			position: relative;
+			z-index: 1;
+
+			@media screen and (max-width:$breakPhone) {
+				width: 100%;
+				margin: 30px 0;
+			}
+		}	
+
+		h1::after, h2::after{
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right:0;
+			margin:auto;
+			width: 60%;
+			height: 1px;
+			border: none;			
+			background-color: $white;
+			content: '';			
+			@include transform(translateY(15px));		
+			@media screen and (max-width:$breakPhone) {
+				display: none;
+			}
+		}
+
+
+
+	}
+
+	.description{
+		width: 40%;
+		max-width: 600px;
+		margin: 30px auto;
+		text-align: justify;
+		color:$blue;
+		line-height: 1.3em;
+
+		@media screen and (max-width:$breakPhone) {
+			width: 80%;
+		}
+
+		a{
+			font-weight: bold;
+			color:$green;
+		}
+	}
+
+	.separator{
+		width: 60%;
+		height: 1px;
+		background-color: $orange;
+		margin: 30px auto;
+
+		@media screen and (max-width:$breakPhone) {
+			width: 80%;
+		}
+	}
+
+
+	#skills{
+		padding: 0;
+		.container-icon.projects{
+		//background-color: transparent;
+		height: auto;
+	}
+
+	ul.skills li{
+		text-transform: uppercase;
+		font-size: 1.5em;
+		margin: 15px;
+		color:$white;
+		font-weight: bold;
+	}
+}
+
+.showcase{
+	width: 60%;
+	margin-bottom: 60px;
+	white-space: nowrap;
+	display: inline-block;
+
+	@media screen and (max-width:$breakPhone) {
+		width: 80%;
+		white-space: normal;
+	}
+	img{
+		width: 50%;
+
+		@media screen and (max-width:$breakPhone) {
+			width: 100%;
+		}
+	}
+
+}
+
+}

@@ -1,0 +1,329 @@
+// http://meyerweb.com/eric/tools/css/reset/ 
+//   v2.0 | 20110126
+//   License: none (public domain)
+//
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//VARIABLES
+
+//COLORS
+$lightGrey : #F5F5F5;
+$white: #F9F9F9;
+$green : #4AC6B7;
+$blue:#4F5E7F;
+$purple:#965F8A;
+$orange:#FF7070;
+
+//WIDTH
+$max-width: 1280px;
+
+$breakSmall: 320px;
+$breakPhone : 480px;
+$breakTablet: 980px;
+$breakLarge: 1280px;
+
+
+//HEIGHT
+$headerHeight : 75px;
+$h2Height : 1.3em;
+$textSize : 0.85em;
+
+//FONT
+$title : "break";
+$normalFont : "Lato";
+
+//PATHS
+$imagePath : "../images/";
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Hind:400,600,300);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro);
+@font-face {
+    font-family: 'break';
+    src: url('../fonts/Break Light.ttf')format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin filter($str) {
+  -webkit-filter: #{$str};
+  -moz-filter: #{$str};
+  -ms-filter: #{$str};
+  -o-filter: #{$str};
+  filter: #{$str};      
+}
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin delay($delay){
+	animation-delay: $delay;
+	-moz-animation-delay: $delay;
+	-o-animation-delay: $delay;
+	-webkit-animation-delay: $delay;
+}
+
+@mixin blur($blur){
+	-webkit-filter: blur($blur); 
+	-moz-filter: blur($blur); 
+	filter: blur($blur); 
+}
+
+@mixin placeholder(){
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    	@content;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	  	@content;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   @content;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   @content;
+	}
+}
+
+//GENERAL
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color: $white;
+	width: 100%;	
+	height: 100%;
+	margin:0;	
+	font-family: $normalFont;
+}
+h1, h2{
+	font-size: 2em;
+}
+
+section{
+	//position: relative;
+}
+.center{
+	margin:auto;
+	text-align: center;
+}
+.content{
+	max-width: 1280px;
+	width: 100%;
+}
+a{
+	color:inherit;
+	text-decoration: none;
+}
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+
+
+//
+//
+//ANIMATIONS
+//
+//
+
+@include keyframes(fadeIn) {
+  0% {
+    opacity: 0;    
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeInDown) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(-20px));    
+  }
+
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
+
+@include keyframes(fadeInUp) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(20px));    
+  }
+
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
+
+@include keyframes(unBlur) {
+	0%{
+		opacity: 0;   		
+		@include blur(50px);
+	}
+  
+	100% {
+		opacity: 1;
+    	@include blur(0px);
+ 	}
+}
+
+@include keyframes(loadLeft) {
+	0%{
+		width: 0;
+		z-index: 20;
+	}
+  
+	20% {	
+		width: 100%;    	
+ 	}
+
+ 	100%{
+ 		z-index: 1;
+ 	}
+}
+
+@include keyframes(blueToWhite) {
+	0%{
+		background-color: $blue;		
+	}
+  
+	100% {
+		background-color: $white;    	
+ 	}
+}
+
+.fade-in-down {
+	visibility: visible;
+	@include animation(fadeInDown 1s both);  		
+}
+
+.fade-in {
+	visibility: visible;
+	@include animation(fadeIn 1s both);  		
+}
+
+.fade-in-up {
+	visibility: visible;
+	@include animation(fadeInUp 1s both);
+}
+
+.load-left {
+	@include animation(loadLeft 3s both);
+}
+
+.blue-to-white{
+	@include animation(blueToWhite 2s both);
+}
+
+.un-blur{		
+	@include animation(unBlur 3s backwards);	
+}
+.delay-3s {
+	@include delay(3s);
+}
+.delay-2s {
+	@include delay(2s);
+}
+.delay-15s{
+	@include delay(1.5s);	
+}
+.delay-1s {
+	@include delay(1s);
+}
+.delay-05s {
+	@include delay(0.5s);
+}
