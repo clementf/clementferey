@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 		var anchor = $(this).attr('href');
 		$('body, html').animate({
 			scrollTop: $(anchor).offset().top
-		}, 'slow');
+		}, 1000);
 
 	});
 
@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 		winH = document.body.offsetHeight;
 	} else {
 		winW = window.innerWidth;
-		winH = window.innerWidth
+		winH = window.innerWidth;
 	}
 
 	//
@@ -31,14 +31,14 @@ jQuery(document).ready(function($) {
 		var offset, position, scroll, elem;
 		//We're on a mobile
 		if (winW < 480) {
-			
+
 			$('#work figure').each(function(index, el) {
 				elem = $(this);
 				offset = elem.offset();
 				position = offset.top;
 				scroll = top + winH / 2;
-				if(scroll > position + elem.height() / 2){
-					$('#work figure').removeClass('hovered')
+				if (scroll > position + elem.height() / 2) {
+					$('#work figure').removeClass('hovered');
 					elem.addClass('hovered');
 				}
 			});
@@ -67,8 +67,7 @@ jQuery(document).ready(function($) {
 	}, {
 		offset: '85%'
 	});
-
-
+	
 	//
 	//
 	//	Contact form handling
@@ -98,13 +97,6 @@ jQuery(document).ready(function($) {
 					$('#contact-name').val('');
 					$('#contact-email').val('');
 				}
-			})
-			.fail(function() {
-				console.log("error");
-			})
-			.always(function() {
-				console.log("complete");
 			});
-
 	});
 });

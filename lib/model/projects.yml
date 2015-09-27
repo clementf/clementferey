@@ -27,7 +27,7 @@
     The goal of this project is to help people when they play the french game called \"Pétanque\". <br/> 
     In fact, sometimes your eyes are tricking you and you think that the ball is closer than it really is.
     So we try get rid of this by making calculations based on a 4*4 meters square built aroud the field.
-    We used the c++ library OpenCV to do the image processing. The code is available on <a href=\"http://github.com/clementf/yellow\" target=\"_blank\">github</a>. 
+    We used the C++ library OpenCV to do the image processing. The code is available on <a href=\"http://github.com/clementf/yellow\" target=\"_blank\">github</a>. 
     <br/>The code for the iOS app is written in swift and we use an Objective-C bridge between Swift and C++ image processing."
     type: iOS app
   fr:

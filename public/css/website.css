@@ -531,7 +531,7 @@ a {
 .projects .go-back:hover {
   background-color: rgba(240, 240, 240, 0.7); }
   .projects .go-back:hover .fa-arrow-left {
-    color: #4F5E7F; }
+    color: #965F8A; }
 .projects .back1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -624,6 +624,9 @@ a {
   padding: 20px;
   margin-bottom: 70px;
   color: #4F5E7F; }
+  @media screen and (max-width: 480px) {
+    #menu {
+      margin-bottom: 15px; } }
   #menu ul {
     font-size: 1.5em; }
     #menu ul li {
@@ -631,6 +634,9 @@ a {
       padding-bottom: 10px;
       display: inline-block;
       position: relative; }
+      @media screen and (max-width: 480px) {
+        #menu ul li {
+          display: block; } }
     #menu ul a {
       transition: all 0.3s; }
     #menu ul a::after {
@@ -680,6 +686,9 @@ a {
     z-index: 2;
     color: #4F5E7F;
     margin: 20px; }
+    @media screen and (max-width: 480px) {
+      #intro h2, #intro h1 {
+        margin: 10px; } }
     #intro h2 strong, #intro h1 strong {
       font-weight: bold; }
   #intro .container-photo {
@@ -688,7 +697,7 @@ a {
     width: 100%; }
     @media screen and (max-width: 480px) {
       #intro .container-photo {
-        bottom: 10%;
+        bottom: 10px;
         top: initial; } }
     #intro .container-photo #line {
       background-color: #F9F9F9;
