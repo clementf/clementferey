@@ -429,7 +429,7 @@ a {
     background-color: #F9F9F9; } }
 
 .fade-in-down {
-  visibility: visible;
+  visibility: visible !important;
   -webkit-animation: fadeInDown 1s both;
   -moz-animation: fadeInDown 1s both;
   -ms-animation: fadeInDown 1s both;
@@ -437,7 +437,7 @@ a {
   animation: fadeInDown 1s both; }
 
 .fade-in {
-  visibility: visible;
+  visibility: visible !important;
   -webkit-animation: fadeIn 1s both;
   -moz-animation: fadeIn 1s both;
   -ms-animation: fadeIn 1s both;
@@ -445,7 +445,7 @@ a {
   animation: fadeIn 1s both; }
 
 .fade-in-up {
-  visibility: visible;
+  visibility: visible !important;
   -webkit-animation: fadeInUp 1s both;
   -moz-animation: fadeInUp 1s both;
   -ms-animation: fadeInUp 1s both;
@@ -502,6 +502,9 @@ a {
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s; }
+
+.wp1, .wp2, .wp3 {
+  visibility: hidden; }
 
 .projects .go-back {
   cursor: pointer;
@@ -669,6 +672,9 @@ a {
     background-position: center center;
     background-attachment: fixed;
     height: 100%; }
+    @media screen and (max-width: 480px) {
+      #intro #background {
+        background-attachment: initial; } }
   #intro h2, #intro h1 {
     position: relative;
     z-index: 2;
@@ -878,7 +884,7 @@ a {
     -ms-transform: translate3d(0, 20px, 0);
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0); }
-  #work .grid figure.effect-sadie:hover h2 {
+  #work .grid figure.effect-sadie:hover h2, #work .grid figure.effect-sadie.hovered h2 {
     -moz-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
     -o-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
     -ms-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
@@ -906,20 +912,20 @@ a {
     -ms-transform: translateY(10px);
     -webkit-transform: translateY(10px);
     transform: translateY(10px); }
-  #work .grid figure.effect-sadie:hover h2::after, #work .grid figure.effect-sadie:focus h2::after {
+  #work .grid figure.effect-sadie:hover h2::after, #work .grid figure.effect-sadie:focus h2::after, #work .grid figure.effect-sadie.hovered h2::after {
     opacity: 0.9;
     -moz-transform: translateY(20px);
     -o-transform: translateY(20px);
     -ms-transform: translateY(20px);
     -webkit-transform: translateY(20px);
     transform: translateY(20px); }
-  #work .grid figure.effect-sadie:hover img, #work .grid figure.effect-sadie:focus img {
+  #work .grid figure.effect-sadie:hover img, #work .grid figure.effect-sadie:focus img, #work .grid figure.effect-sadie.hovered img {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1); }
-  #work .grid figure.effect-sadie:hover figcaption::before, #work .grid figure.effect-sadie:hover ul {
+  #work .grid figure.effect-sadie:hover figcaption::before, #work .grid figure.effect-sadie:hover ul, #work .grid figure.effect-sadie.hovered figcaption::before, #work .grid figure.effect-sadie.hovered ul {
     opacity: 1;
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -938,6 +944,9 @@ a {
   background-attachment: fixed;
   overflow: hidden;
   padding: 30px 0; }
+  @media screen and (max-width: 480px) {
+    #skills .background {
+      background-attachment: initial; } }
 #skills .container-icon {
   width: 190px;
   height: 270px;
@@ -995,7 +1004,7 @@ a {
     #timeline .side {
       width: 100%; } }
   #timeline .side .year {
-    height: 200px;
+    height: 300px;
     position: relative; }
     #timeline .side .year .date {
       vertical-align: middle;

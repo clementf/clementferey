@@ -5,11 +5,11 @@
   skills : [html5, css3, javascript, nodejs]
   back: goroadtrip.jpg
   en: 
-    description : "During the 2015's editon of Brest's startup weekend,
-    I was part of the team working on the project named GoRoadTrip. 
+    description : "During the 2015's edition of Brest's startup week-end,
+    I was part of the team working on the project named <a href=\"http://goroadtrip.co\" target=\"_blank\">GoRoadTrip</a>. 
     The goal of this project is quite simple, backpackers can plan their trip or share what they want
-    along their journey, and they can meet people with common interest based on the location. 
-    Then they can share a little bit of their trip together and even save money. </br> 
+    along their journey. They can meet people with common interests based on the location. 
+    Then they can share a little bit of their trip together and even save money. <br/> 
     This was my first Startup week-end and it was a great experience. The spirit in those events is really powerful
     and gives you the strengh to continue your projects !"
     type: Startup Weekend
@@ -24,11 +24,11 @@
   back: yellow_petanque_ios.jpg
   en:  
     description : "Yellow is a school project that I made with my friend <a href=\"http://www.moriniere-boris.fr/\" target=\"_blank\">Boris Morinière</a>. 
-    The goal of this project is to help people when they play the french game called \"Pétanque\". </br> 
+    The goal of this project is to help people when they play the french game called \"Pétanque\". <br/> 
     In fact, sometimes your eyes are tricking you and you think that the ball is closer than it really is.
     So we try get rid of this by making calculations based on a 4*4 meters square built aroud the field.
     We used the c++ library OpenCV to do the image processing. The code is available on <a href=\"http://github.com/clementf/yellow\" target=\"_blank\">github</a>. 
-    </br>The code for the iOS app is written in swift and we use an Objective-C bridge between Swift and C++ image processing."
+    <br/>The code for the iOS app is written in swift and we use an Objective-C bridge between Swift and C++ image processing."
     type: iOS app
   fr:
     description : s
@@ -42,7 +42,7 @@
   en: 
     description : "This is a personnal project that I started in late 2013. 
     At this time, I was living in Brest and had a windows phone. Unfortunately, there was no app 
-    to tell me when the buses were coming. So I tried to reverse engineer the Windows widget of the local bus company.</br>
+    to tell me when the buses were coming. So I tried to reverse engineer the Windows widget of the local bus company.<br/>
     And after this, I could use some of their webservices to get the data in real time. It was quite funny to implement.
     I did it because I was curious about the Windows Phone plateform."
     type: Windows Phone app

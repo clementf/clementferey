@@ -287,17 +287,17 @@ a{
 }
 
 .fade-in-down {
-	visibility: visible;
+	visibility: visible!important;
 	@include animation(fadeInDown 1s both);  		
 }
 
 .fade-in {
-	visibility: visible;
+	visibility: visible!important;
 	@include animation(fadeIn 1s both);  		
 }
 
 .fade-in-up {
-	visibility: visible;
+	visibility: visible!important;
 	@include animation(fadeInUp 1s both);
 }
 
@@ -326,4 +326,8 @@ a{
 }
 .delay-05s {
 	@include delay(0.5s);
+}
+
+.wp1, .wp2, .wp3{
+	visibility: hidden;
 }
