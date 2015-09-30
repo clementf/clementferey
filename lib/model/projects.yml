@@ -5,13 +5,13 @@
   skills : [html5, css3, javascript, nodejs]
   back: goroadtrip.jpg
   en: 
-    description : "During the 2015's edition of Brest's startup week-end,
-    I was part of the team working on the project named <a href=\"http://goroadtrip.co\" target=\"_blank\">GoRoadTrip</a>. 
-    The goal of this project is quite simple, backpackers can plan their trip or share what they want
-    along their journey. They can meet people with common interests based on the location. 
+    description : "During the 2015 edition of Brest startup week-end,
+    I was part of a team working on the project called <a href=\"http://goroadtrip.co\" target=\"_blank\">GoRoadTrip</a>. 
+    The goal of this project is quite simple, backpackers can plan their trip or share what they want all
+    along their journey. They can meet people who have common interests on a specific place. 
     Then they can share a little bit of their trip together and even save money. <br/> 
-    This was my first Startup week-end and it was a great experience. The spirit in those events is really powerful
-    and gives you the strengh to continue your projects !"
+    This was my first Startup week-end and it was a great experience. The team spirit in those events is really powerful
+    and gives you the desire to continue your projects !"
     type: Startup Weekend
   fr:
     description : GoRoadtrip
@@ -24,11 +24,11 @@
   back: yellow_petanque_ios.jpg
   en:  
     description : "Yellow is a school project that I made with my friend <a href=\"http://www.moriniere-boris.fr/\" target=\"_blank\">Boris Morinière</a>. 
-    The goal of this project is to help people when they play the french game called \"Pétanque\". <br/> 
+    The goal of this project is to help people when they play the French game called \"Pétanque\". <br/> 
     In fact, sometimes your eyes are tricking you and you think that the ball is closer than it really is.
-    So we try get rid of this by making calculations based on a 4*4 meters square built aroud the field.
+    So we tried to get rid of this by making calculations based on a 4 by 4 meters square built aroud the field.
     We used the C++ library <a href=\"http://opencv.org/\">OpenCV</a> to do the image processing. The code is available on <a href=\"http://github.com/clementf/yellow\" target=\"_blank\">github</a>. 
-    <br/>The code for the iOS app is written in swift and we use an Objective-C bridge between Swift and C++ image processing."
+    <br/>The code for the iOS app is written in Swift and we used an Objective-C bridge between Swift and C++ image processing."
     type: iOS app
   fr:
     description : s
@@ -41,10 +41,10 @@
   back: gobrest_windows_phone.jpg
   en: 
     description : "This is a personnal project that I started in late 2013. 
-    At this time, I was living in Brest and had a windows phone. Unfortunately, there was no app 
+    At this time, I was living in Brest and had a Windows Phone. Unfortunately, there was no app 
     to tell me when the buses were coming. So I tried to reverse engineer the Windows widget of the local bus company.<br/>
     And after this, I could use some of their webservices to get the data in real time. It was quite funny to implement.
-    I did it because I was curious about the Windows Phone plateform."
+    I did it because I was curious about the Windows Phone platform."
     type: Windows Phone app
   fr:
     description : GoRoadtrip
@@ -57,7 +57,7 @@
   back: tennis_club_muzillac.jpg
   en: 
     description : "This was my first website, I made it for the tennis club of my hometown.
-    I learned PHP and MySql building this website, all by myself. I did some improvements on the UI and I will soon
+    I learned PHP and MySql while building this website, all by myself. Since then, I have improved a few things in the UI and I will soon
     make a new version of it."
     type: Website
   fr:
