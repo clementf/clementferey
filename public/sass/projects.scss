@@ -76,14 +76,14 @@
 	}
 
 	.description{
-		width: 40%;
+		width: 60%;
 		max-width: 600px;
 		margin: 30px auto;
 		text-align: justify;
 		color:$blue;
 		line-height: 1.3em;
-
-		@media screen and (max-width:$breakPhone) {
+		
+		@media screen and (max-width:$breakTablet) {
 			width: 80%;
 		}
 
@@ -127,14 +127,14 @@
 	white-space: nowrap;
 	display: inline-block;
 
-	@media screen and (max-width:$breakPhone) {
+	@media screen and (max-width:$breakTablet) {
 		width: 80%;
 		white-space: normal;
 	}
 	img{
 		width: 50%;
 
-		@media screen and (max-width:$breakPhone) {
+		@media screen and (max-width:$breakTablet) {
 			width: 100%;
 		}
 	}

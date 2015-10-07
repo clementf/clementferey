@@ -103,6 +103,11 @@
 			top:initial;
 		}
 
+		@media only screen and (min-height: 320px) and (orientation: landscape) {
+			bottom: 20px;
+			top:initial;
+		}
+
 		#line{
 			background-color: $white;
 			opacity: 0.8;
