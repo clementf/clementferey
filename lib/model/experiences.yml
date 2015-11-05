@@ -1,0 +1,25 @@
+1:
+  name: Internship
+  year: 2013  
+  place: ID Interactive
+  skills : [html5, css3, javascript, sql, php]
+  back: internship-idi.jpg
+  en: 
+    description : "During this internship which was my first as a web developer, I made a lot of websites, using 
+    the PHP framework developed by the agency where I was working. It was a three-month internship."
+  fr:
+2:
+  name: Part time job
+  year: 2013 - 2014  
+  place: ID Interactive
+  skills : [angularJS, Android, html5, css3, javascript, sql, php]
+  back: part-time-job-idi.jpg
+  en: 
+    description : "After my three-month internship at <a href=\"www.id-interactive.fr\">ID Interactive</a>, I stayed
+    in the web agency to do a part time job during the school year 2013 - 2014. I worked on two important projects. <br/>
+    The first one is an android application which is a social network. You can 
+    share some photos based on a theme and the people who posted the most liked photos receive gifts. <br/>
+    The second one is a service that allows companies to manage lists of persons to whom they want to send newsletters.
+    It's a Mailchimp like application, with a powerful editor as well. It's an angularJS app, relying on a php backend that 
+    exposes a REST API."
+  fr:

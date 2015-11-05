@@ -2,19 +2,42 @@ home:
   title: "Clément Férey, future engineer. Tech, startup, travel."
   description: "Clément Férey's portfolio, learn about my skills, experiences and projects that I've made."
   url: http://clementferey.fr
-1:
-  title: GoRoadTrip - Project made in the Startup week-end of Brest in 2015
-  description: Help backpackers  to enjoy their journey is the goal of this project.
-  url: http://clementferey.fr/projects/1/goroadtrip-startup-weekend-brest-entrepreneurship
-2:
-  title: Yellow - iOS Petanque project
-  description: Yellow is a project about petanque and iOS development
-  url: http://clementferey.fr/projects/2/app-ios-opencv-image-petanque
-3:
-  title: GoBrest - Bus Schedule Windows Phone app
-  description: GoBrest is a windows phone app which help people living in Brest to know when the bus will arrive
-  url: http://clementferey.fr/projects/3/app-gobrest-windows-phone-bus-schedule
-4:
-  title: TC Muzillac - A Website for a tennis club made in 2012
-  description: "A simple website to have some news about Muzillac's tennis club"
-  url: http://clementferey.fr/projects/4/website-tennis-muzillac
+project:
+  1:
+    title: GoRoadTrip - Project made in the Startup week-end of Brest in 2015
+    description: Help backpackers  to enjoy their journey is the goal of this project.
+    url: http://clementferey.fr/projects/1/goroadtrip-startup-weekend-brest-entrepreneurship
+  2:
+    title: Yellow - iOS Petanque project
+    description: Yellow is a project about petanque and iOS development
+    url: http://clementferey.fr/projects/2/app-ios-opencv-image-petanque
+  3:
+    title: GoBrest - Bus Schedule Windows Phone app
+    description: GoBrest is a windows phone app which help people living in Brest to know when the bus will arrive
+    url: http://clementferey.fr/projects/3/app-gobrest-windows-phone-bus-schedule
+  4:
+    title: TC Muzillac - A Website for a tennis club made in 2012
+    description: "A simple website to have some news about Muzillac's tennis club"
+    url: http://clementferey.fr/projects/4/website-tennis-muzillac
+formation:
+  1:
+    title : ISEN - Computer science and network programm
+    description: The computer science programm that i've followed during the first two years of studies after high scool
+    url: http://clementferey.fr/formations/1/isen-cir-computer-science
+  2:
+    title : ISEN - Engineering school
+    description: The engineering programm that i've followed between 2013 and 2015
+    url: http://clementferey.fr/formations/2/isen-engineering-computer-science
+  3:
+    title : UQAC - Computer science master
+    description: The master in computer science that i'm currently doing at UQAC.
+    url: http://clementferey.fr/formations/3/uqac-quebec-chicoutimi-computer-science
+experience:
+  1:
+    title : Intership - ID Interactive
+    description: Summary of my internship at ID Interactive in 2013
+    url: http://clementferey.fr/experiences/1/internship-id-interactive
+  2:
+    title : Part time Job - ID Interactive
+    description: Summary of my part time at ID Interactive in 2013 and 2014
+    url: http://clementferey.fr/experiences/2/part-time-job-id-interactive

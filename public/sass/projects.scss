@@ -1,4 +1,4 @@
-.projects{
+.projects, .formations, .experiences{
 	.go-back{
 		cursor: pointer;
 		border-radius: 50%;
@@ -107,15 +107,15 @@
 
 	#skills{
 		padding: 0;
-		.container-icon.projects{
+		.container-icon.projects, .container-icon.formations, .container-icon.experiences{
 		//background-color: transparent;
 		height: auto;
 	}
 
 	ul.skills li{
 		text-transform: uppercase;
-		font-size: 1.5em;
-		margin: 15px;
+		font-size: 1.2em;
+		margin: 15px auto;
 		color:$white;
 		font-weight: bold;
 	}

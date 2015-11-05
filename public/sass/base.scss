@@ -207,6 +207,29 @@ a{
    clear: both;
 }
 
+#error-404{
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	background-image:url(unquote($imagePath + "404.jpg"));
+	background-size:cover;
+	background-position:center center;
+	background-attachment: fixed;
+	color:$white;
+	text-align: center;
+
+	h1{
+		padding: 50px;
+	}
+	p{
+		font-size: $h2Height;
+	}
+	a{
+		color:$green;
+	}
+}
 
 
 //

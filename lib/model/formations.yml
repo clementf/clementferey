@@ -1,0 +1,31 @@
+1:
+  name: ISEN
+  year: 2011 - 2013  
+  place: Rennes (France)
+  skills : [C/C++, Java, html5, css3, javascript, sql, php]
+  back: isen-rennes.jpg
+  en: 
+    description : "During the first two years of my studies after high school, I studied mathematics, physics
+    and also the basics of computer science. During thoese two years, I realized that I really like creating things
+    and programming. I did those two years in an engineering school called <a target=\"_blank\" href=\"http://isen.fr\">ISEN</a>, in Rennes."
+  fr:
+2:
+  name: ISEN
+  year: 2013 - 2015  
+  place: Brest (France)
+  skills : [Assembly, CISCO networking, Linux, bash, opencv]
+  back: isen-brest.jpg
+  en: 
+    description : "After those two years, I continued at ISEN, but this time I was based in Brest. I did a part time job
+    in 2013 - 2014 while going to school. I still studied computer science, with a lot of network and linux courses."
+  fr:
+3:
+  name: UQAC
+  year: 2015 - 2016
+  place: Chicoutimi (Québec, Canada)
+  skills : [big data, lambda architecture, security, android]
+  back: uqac-campus.jpg
+  en: 
+    description : "For the last year of my studies, I decided to go to Canada, so I can discover another country while
+    improving my skills. So here I am, trying to learn new things about programming, security or big data architecture for instance."
+  fr:

@@ -1,28 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>http://clementferey.fr/</loc>
-  <lastmod>2015-09-28T10:29:49+00:00</lastmod>
-</url>
-<url>
-  <loc>http://clementferey.fr/projects/1/goroadtrip-startup-weekend-brest-entrepreneurship</loc>
-  <lastmod>2015-09-28T10:29:49+00:00</lastmod>
-</url>
-<url>
-  <loc>http://clementferey.fr/projects/2/app-ios-opencv-image-petanque/</loc>
-  <lastmod>2015-09-28T10:29:49+00:00</lastmod>
-</url>
-<url>
-  <loc>http://clementferey.fr/projects/3/app-gobrest-windows-phone-bus-schedule</loc>
-  <lastmod>2015-09-28T10:29:49+00:00</lastmod>
-</url>
-<url>
-  <loc>http://clementferey.fr/projects/4/website-tennis-muzillac</loc>
-  <lastmod>2015-09-28T10:29:49+00:00</lastmod>
-</url>
+  <url>
+    <loc>http://clementferey.fr/</loc>
+    <lastmod>2015-09-28T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/projects/1/goroadtrip-startup-weekend-brest-entrepreneurship</loc>
+    <lastmod>2015-09-28T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/projects/2/app-ios-opencv-image-petanque/</loc>
+    <lastmod>2015-09-28T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/projects/3/app-gobrest-windows-phone-bus-schedule</loc>
+    <lastmod>2015-09-28T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/projects/4/website-tennis-muzillac</loc>
+    <lastmod>2015-09-28T10:29:49+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>http://clementferey.fr/experiences/1/internship-id-interactive</loc>
+    <lastmod>2015-11-04T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/experiences/2/part-time-job-id-interactive</loc>
+    <lastmod>2015-11-04T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/formations/1/isen-cir-computer-science</loc>
+    <lastmod>2015-11-04T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/formations/2/isen-engineering-computer-science</loc>
+    <lastmod>2015-11-04T10:29:49+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://clementferey.fr/formations/3/uqac-quebec-chicoutimi-computer-science</loc>
+    <lastmod>2015-11-04T10:29:49+00:00</lastmod>
+  </url>
+
 </urlset>

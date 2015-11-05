@@ -554,9 +554,9 @@
 		input, textarea{
 			margin: 35px auto;
 			border:none;
-			font-size: 1.1em;
-			background-color: transparent;			
-			border-bottom: 1px solid $blue;
+			font-size: 1.1em;			
+			background-color: transparent;
+			border-bottom: 2px solid $green;
 			padding: 10px;
 			font-family: $normalFont, sans-serif;
 			color:$orange;
@@ -575,7 +575,7 @@
 			color:$orange;	
 			font-family: $normalFont, sans-serif;		
 		}
-		textarea{
+		textarea{			
 			display: block;			
 
 		}

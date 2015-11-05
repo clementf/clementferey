@@ -1,6 +1,4 @@
 var express = require('express');
-
-
 var app = express();
 var fs = require('fs');
 var morgan = require('morgan');
@@ -52,8 +50,10 @@ require('./lib/model/')();
 require('./lib/route/')(app);
 
 //Templating system
-var exphbs  = require('express-handlebars');
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+var exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs({
+	defaultLayout: 'main'
+}));
 app.set('view engine', 'handlebars');
 
 app.use(function(req, res, next) {
@@ -63,7 +63,7 @@ app.use(function(req, res, next) {
 
 
 
-function startServer() {	
+function startServer() {
 	var server = sticky(require('http').createServer(app));
 	server.listen(app.get('port'), function() {
 		console.log('server started');
@@ -71,7 +71,7 @@ function startServer() {
 }
 
 sticky(function() {
-	var server = require('http').createServer(app);	
+	var server = require('http').createServer(app);
 	return server;
 }).listen(app.get('port'), function() {
 	console.log('server started');
