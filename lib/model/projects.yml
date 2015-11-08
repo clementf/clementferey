@@ -11,7 +11,8 @@
     along their journey. They can meet people who have common interests on a specific place. 
     Then they can share a little bit of their trip together and even save money. <br/> 
     This was my first Startup week-end and it was a great experience. The team spirit in those events is really powerful
-    and gives you the desire to continue your projects !"
+    and gives you the desire to continue your projects ! <br/>
+    We are currently building the first version of the project with <a href=\"http://sailsjs.org\">SailsJS</a> and also angularJS."
     type: Startup Weekend
   fr:
     description : GoRoadtrip
