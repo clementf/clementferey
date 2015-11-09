@@ -75,8 +75,17 @@
 		height: 100%;			
 		@media screen and (max-width:$breakPhone) {			
 			background-attachment: initial;	
+			background-image:url(unquote($imagePath + "bg-mobile.jpg"));
 		}
 	}	
+	
+	h2{
+		font-size: 1.4em;
+		@media screen and (max-width:$breakPhone) {	
+			font-weight: bold;
+			color:$white!important;
+		}
+	}
 
 	h2, h1{		
 		position: relative;
@@ -85,7 +94,7 @@
 		margin: 20px;
 
 		@media screen and (max-width:$breakPhone) {			
-			margin: 10px;
+			margin: 10px;			
 		}
 
 		strong{
@@ -130,6 +139,12 @@
 				overflow: hidden;
 				width: 190px;
 				height: 190px;
+
+				@media screen and (max-width:$breakPhone) {
+					width: 120px;
+					height: 120px;
+
+				}
 				img{
 					height: 100%;
 					width: 100%;
@@ -401,6 +416,7 @@
 
 		@media screen and (max-width:$breakPhone) {			
 			background-attachment: initial;	
+			background-image:url(unquote($imagePath + "code-mobile.jpg"));
 		}
 	}
 	.container-icon{

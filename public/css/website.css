@@ -70,6 +70,10 @@ h1, h2 {
 .content {
   width: 100%; }
 
+@media screen and (max-width: 480px) {
+  .no-mobile {
+    display: none; } }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -100,37 +104,37 @@ a {
   #error-404 a {
     color: #4AC6B7; }
 
-@-webkit-keyframes $animation-name {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@-moz-keyframes $animation-name {
+@-moz-keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@-ms-keyframes $animation-name {
+@-ms-keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@-o-keyframes $animation-name {
+@-o-keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@keyframes $animation-name {
+@keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@-webkit-keyframes $animation-name {
+@-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
@@ -146,7 +150,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-moz-keyframes $animation-name {
+@-moz-keyframes fadeInDown {
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
@@ -162,7 +166,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-ms-keyframes $animation-name {
+@-ms-keyframes fadeInDown {
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
@@ -178,7 +182,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-o-keyframes $animation-name {
+@-o-keyframes fadeInDown {
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
@@ -194,7 +198,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes $animation-name {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
@@ -210,7 +214,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-webkit-keyframes $animation-name {
+@-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
     -moz-transform: translateY(20px);
@@ -226,7 +230,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-moz-keyframes $animation-name {
+@-moz-keyframes fadeInUp {
   0% {
     opacity: 0;
     -moz-transform: translateY(20px);
@@ -242,7 +246,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-ms-keyframes $animation-name {
+@-ms-keyframes fadeInUp {
   0% {
     opacity: 0;
     -moz-transform: translateY(20px);
@@ -258,7 +262,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-o-keyframes $animation-name {
+@-o-keyframes fadeInUp {
   0% {
     opacity: 0;
     -moz-transform: translateY(20px);
@@ -274,7 +278,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes $animation-name {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
     -moz-transform: translateY(20px);
@@ -290,7 +294,7 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@-webkit-keyframes $animation-name {
+@-webkit-keyframes unBlur {
   0% {
     opacity: 0;
     -webkit-filter: blur(50px);
@@ -302,7 +306,7 @@ a {
     -moz-filter: blur(0px);
     filter: blur(0px); } }
 
-@-moz-keyframes $animation-name {
+@-moz-keyframes unBlur {
   0% {
     opacity: 0;
     -webkit-filter: blur(50px);
@@ -314,7 +318,7 @@ a {
     -moz-filter: blur(0px);
     filter: blur(0px); } }
 
-@-ms-keyframes $animation-name {
+@-ms-keyframes unBlur {
   0% {
     opacity: 0;
     -webkit-filter: blur(50px);
@@ -326,7 +330,7 @@ a {
     -moz-filter: blur(0px);
     filter: blur(0px); } }
 
-@-o-keyframes $animation-name {
+@-o-keyframes unBlur {
   0% {
     opacity: 0;
     -webkit-filter: blur(50px);
@@ -338,7 +342,7 @@ a {
     -moz-filter: blur(0px);
     filter: blur(0px); } }
 
-@keyframes $animation-name {
+@keyframes unBlur {
   0% {
     opacity: 0;
     -webkit-filter: blur(50px);
@@ -350,7 +354,7 @@ a {
     -moz-filter: blur(0px);
     filter: blur(0px); } }
 
-@-webkit-keyframes $animation-name {
+@-webkit-keyframes loadLeft {
   0% {
     width: 0;
     z-index: 20; }
@@ -359,7 +363,7 @@ a {
   100% {
     z-index: 1; } }
 
-@-moz-keyframes $animation-name {
+@-moz-keyframes loadLeft {
   0% {
     width: 0;
     z-index: 20; }
@@ -368,7 +372,7 @@ a {
   100% {
     z-index: 1; } }
 
-@-ms-keyframes $animation-name {
+@-ms-keyframes loadLeft {
   0% {
     width: 0;
     z-index: 20; }
@@ -377,7 +381,7 @@ a {
   100% {
     z-index: 1; } }
 
-@-o-keyframes $animation-name {
+@-o-keyframes loadLeft {
   0% {
     width: 0;
     z-index: 20; }
@@ -386,7 +390,7 @@ a {
   100% {
     z-index: 1; } }
 
-@keyframes $animation-name {
+@keyframes loadLeft {
   0% {
     width: 0;
     z-index: 20; }
@@ -395,31 +399,31 @@ a {
   100% {
     z-index: 1; } }
 
-@-webkit-keyframes $animation-name {
+@-webkit-keyframes blueToWhite {
   0% {
     background-color: #4F5E7F; }
   100% {
     background-color: #F9F9F9; } }
 
-@-moz-keyframes $animation-name {
+@-moz-keyframes blueToWhite {
   0% {
     background-color: #4F5E7F; }
   100% {
     background-color: #F9F9F9; } }
 
-@-ms-keyframes $animation-name {
+@-ms-keyframes blueToWhite {
   0% {
     background-color: #4F5E7F; }
   100% {
     background-color: #F9F9F9; } }
 
-@-o-keyframes $animation-name {
+@-o-keyframes blueToWhite {
   0% {
     background-color: #4F5E7F; }
   100% {
     background-color: #F9F9F9; } }
 
-@keyframes $animation-name {
+@keyframes blueToWhite {
   0% {
     background-color: #4F5E7F; }
   100% {
@@ -684,7 +688,14 @@ a {
     height: 100%; }
     @media screen and (max-width: 480px) {
       #intro #background {
-        background-attachment: initial; } }
+        background-attachment: initial;
+        background-image: url(../images/bg-mobile.jpg); } }
+  #intro h2 {
+    font-size: 1.4em; }
+    @media screen and (max-width: 480px) {
+      #intro h2 {
+        font-weight: bold;
+        color: #F9F9F9 !important; } }
   #intro h2, #intro h1 {
     position: relative;
     z-index: 2;
@@ -727,6 +738,10 @@ a {
         overflow: hidden;
         width: 190px;
         height: 190px; }
+        @media screen and (max-width: 480px) {
+          #intro .container-photo #circle #circle-inner {
+            width: 120px;
+            height: 120px; } }
         #intro .container-photo #circle #circle-inner img {
           height: 100%;
           width: 100%;
@@ -973,7 +988,8 @@ a {
   padding: 30px 0; }
   @media screen and (max-width: 480px) {
     #skills .background {
-      background-attachment: initial; } }
+      background-attachment: initial;
+      background-image: url(../images/code-mobile.jpg); } }
 
 #skills .container-icon {
   width: 190px;

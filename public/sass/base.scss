@@ -96,20 +96,20 @@ $imagePath : "../images/";
   transition: $args;
 }
 
-@mixin keyframes($animation-name) {
-  @-webkit-keyframes $animation-name {
+@mixin keyframesMix($animation) {
+  @-webkit-keyframes #{$animation} {
     @content;
   }
-  @-moz-keyframes $animation-name {
+  @-moz-keyframes #{$animation} {
     @content;
   }  
-  @-ms-keyframes $animation-name {
+  @-ms-keyframes #{$animation} {
     @content;
   }
-  @-o-keyframes $animation-name {
+  @-o-keyframes #{$animation} {
     @content;
   }  
-  @keyframes $animation-name {
+  @keyframes #{$animation} {
     @content;
   }
 }
@@ -192,6 +192,11 @@ section{
 .content{	
 	width: 100%;
 }
+.no-mobile{
+	@media screen and (max-width:$breakPhone) {			
+		display: none;
+	}
+}
 a{
 	color:inherit;
 	text-decoration: none;
@@ -237,7 +242,7 @@ a{
 //
 //
 
-@include keyframes(fadeIn) {
+@include keyframesMix(fadeIn) {
   0% {
     opacity: 0;    
   }
@@ -247,7 +252,7 @@ a{
   }
 }
 
-@include keyframes(fadeInDown) {
+@include keyframesMix(fadeInDown) {
   0% {
     opacity: 0;
     @include transform(translateY(-20px));    
@@ -259,7 +264,7 @@ a{
   }
 }
 
-@include keyframes(fadeInUp) {
+@include keyframesMix(fadeInUp) {
   0% {
     opacity: 0;
     @include transform(translateY(20px));    
@@ -271,7 +276,7 @@ a{
   }
 }
 
-@include keyframes(unBlur) {
+@include keyframesMix(unBlur) {
 	0%{
 		opacity: 0;   		
 		@include blur(50px);
@@ -283,7 +288,7 @@ a{
  	}
 }
 
-@include keyframes(loadLeft) {
+@include keyframesMix(loadLeft) {
 	0%{
 		width: 0;
 		z-index: 20;
@@ -298,7 +303,7 @@ a{
  	}
 }
 
-@include keyframes(blueToWhite) {
+@include keyframesMix(blueToWhite) {
 	0%{
 		background-color: $blue;		
 	}
