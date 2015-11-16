@@ -1197,3 +1197,7 @@ footer {
     padding: 10px;
     color: #F9F9F9;
     font-size: 0.8em; }
+  footer .fa-twittos:before {
+    content: "\f099"; }
+  footer .fa-linkediin:before {
+    content: "\f0e1"; }
