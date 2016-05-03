@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
-	$('#menu a').on('click', function(event) {
-		//event.preventDefault();
+	$('#menu a:not(.external)').on('click', function(event) {
+		event.preventDefault();
 		var anchor = $(this).attr('href');
 		$('body, html').animate({
 			scrollTop: $(anchor).offset().top
