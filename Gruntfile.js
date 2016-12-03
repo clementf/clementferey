@@ -4,14 +4,6 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		cafemocha: {
-			all: {
-				src: 'test/tests-*.js',
-				options: {
-					ui: 'tdd'
-				},
-			}
-		},
 		sass: {
 			dist: {
 				options: {
@@ -20,7 +12,6 @@ module.exports = function(grunt) {
 				files: {
 					'public/css/website.css': 'public/sass/main.scss',
 				}
-
 			}
 		},
 		cssmin: {
@@ -49,13 +40,11 @@ module.exports = function(grunt) {
 					'public/js/script.min.js': ['public/js/script.js']
 				}
 			}
-			
-
 		},
 		watch: {
 			js: {
 				files: ['lib/**/*.js', 'lib/**/*.yml', 'public/js/script.js', 'index.js', 'test/tests-*.js', '!**/min.*'],
-				tasks: ['cafemocha', 'jshint', 'uglify'],
+				tasks: ['jshint', 'uglify'],
 				options: {
 					spawn: false
 				}
@@ -79,4 +68,5 @@ module.exports = function(grunt) {
 
 	});
 	grunt.registerTask('default', ['concurrent']);
+	grunt.registerTask('build', ['uglify', 'sass', 'cssmin']);
 };
