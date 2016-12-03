@@ -5,3 +5,4 @@ server.log
 logs
 .DS_Store
 config
+publics/css/website*
