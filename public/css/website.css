@@ -508,6 +508,11 @@ a {
   visibility: hidden; }
 
 .projects .go-back, .formations .go-back, .experiences .go-back {
+  -webkit-transition: background-color 0.35s ease-in;
+  -moz-transition: background-color 0.35s ease-in;
+  -ms-transition: background-color 0.35s ease-in;
+  -o-transition: background-color 0.35s ease-in;
+  transition: background-color 0.35s ease-in;
   cursor: pointer;
   border-radius: 50%;
   display: inline-block;
@@ -516,11 +521,6 @@ a {
   line-height: 60px;
   position: absolute;
   z-index: 5;
-  -webkit-transition: background-color 0.35s ease-in;
-  -moz-transition: background-color 0.35s ease-in;
-  -ms-transition: background-color 0.35s ease-in;
-  -o-transition: background-color 0.35s ease-in;
-  transition: background-color 0.35s ease-in;
   left: 20px;
   top: 20px; }
   .projects .go-back .fa-arrow-left, .formations .go-back .fa-arrow-left, .experiences .go-back .fa-arrow-left {
@@ -557,6 +557,11 @@ a {
         width: 100%;
         margin: 30px 0; } }
   .projects .back1 h1::after, .projects .back1 h2::after, .formations .back1 h1::after, .formations .back1 h2::after, .experiences .back1 h1::after, .experiences .back1 h2::after {
+    -moz-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
     position: absolute;
     top: 100%;
     left: 0;
@@ -566,12 +571,7 @@ a {
     height: 1px;
     border: none;
     background-color: #F9F9F9;
-    content: '';
-    -moz-transform: translateY(15px);
-    -o-transform: translateY(15px);
-    -ms-transform: translateY(15px);
-    -webkit-transform: translateY(15px);
-    transform: translateY(15px); }
+    content: ''; }
     @media screen and (max-width: 480px) {
       .projects .back1 h1::after, .projects .back1 h2::after, .formations .back1 h1::after, .formations .back1 h2::after, .experiences .back1 h1::after, .experiences .back1 h2::after {
         display: none; } }
@@ -647,6 +647,11 @@ a {
     #menu ul a {
       transition: all 0.3s; }
     #menu ul a::after {
+      -moz-transform: translateY(10px);
+      -o-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
       position: absolute;
       top: 100%;
       left: 0;
@@ -657,20 +662,15 @@ a {
       opacity: 0;
       -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
       -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-      transition: opacity 0.3s, transform 0.3s;
-      -moz-transform: translateY(10px);
-      -o-transform: translateY(10px);
-      -ms-transform: translateY(10px);
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px); }
+      transition: opacity 0.3s, transform 0.3s; }
     #menu ul a:hover::after,
     #menu ul a:focus::after {
-      opacity: 0.5;
       -moz-transform: translateY(0px);
       -o-transform: translateY(0px);
       -ms-transform: translateY(0px);
       -webkit-transform: translateY(0px);
-      transform: translateY(0px); }
+      transform: translateY(0px);
+      opacity: 0.5; }
 
 #intro {
   background-color: #4F5E7F;
@@ -869,6 +869,11 @@ a {
         letter-spacing: 1px;
         font-size: 68.5%; }
   #work .grid figure.effect-sadie figcaption::before {
+    -moz-transform: translate3d(0, 50%, 0);
+    -o-transform: translate3d(0, 50%, 0);
+    -ms-transform: translate3d(0, 50%, 0);
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
     position: absolute;
     top: 0;
     left: 0;
@@ -877,18 +882,8 @@ a {
     background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
     background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
     content: '';
-    opacity: 0;
-    -moz-transform: translate3d(0, 50%, 0);
-    -o-transform: translate3d(0, 50%, 0);
-    -ms-transform: translate3d(0, 50%, 0);
-    -webkit-transform: translate3d(0, 50%, 0);
-    transform: translate3d(0, 50%, 0); }
+    opacity: 0; }
   #work .grid figure.effect-sadie h2 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    color: #F9F9F9;
     -webkit-transition: transform 0.35s;
     -moz-transition: transform 0.35s;
     -ms-transition: transform 0.35s;
@@ -898,7 +893,12 @@ a {
     -o-transform: translate3d(0, -50%, 0);
     -ms-transform: translate3d(0, -50%, 0);
     -webkit-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0); }
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #F9F9F9; }
   #work .grid figure.effect-sadie figcaption::before,
   #work .grid figure.effect-sadie ul {
     -webkit-transition: opacity 0.35s transform 0.35s;
@@ -907,18 +907,18 @@ a {
     -o-transition: opacity 0.35s transform 0.35s;
     transition: opacity 0.35s transform 0.35s; }
   #work .grid figure.effect-sadie ul {
+    -moz-transform: translate3d(0, 20px, 0);
+    -o-transform: translate3d(0, 20px, 0);
+    -ms-transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
     position: absolute;
     bottom: 20px;
     text-align: left;
     left: 30px;
     line-height: 1.5;
     width: 100%;
-    opacity: 0;
-    -moz-transform: translate3d(0, 20px, 0);
-    -o-transform: translate3d(0, 20px, 0);
-    -ms-transform: translate3d(0, 20px, 0);
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0); }
+    opacity: 0; }
   #work .grid figure.effect-sadie:hover h2, #work .grid figure.effect-sadie.hovered h2 {
     -moz-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
     -o-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
@@ -926,6 +926,16 @@ a {
     -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
     transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0); }
   #work .grid figure.effect-sadie h2::after {
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -ms-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
     position: absolute;
     top: 100%;
     left: 0;
@@ -936,17 +946,7 @@ a {
     border: none;
     background-color: #F9F9F9;
     content: '';
-    opacity: 0;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: opacity 0.3s, -webkit-transform 0.3s;
-    -ms-transition: opacity 0.3s, -webkit-transform 0.3s;
-    -o-transition: opacity 0.3s, -webkit-transform 0.3s;
-    transition: opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transform: translateY(10px);
-    -o-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px); }
+    opacity: 0; }
   #work .grid figure.effect-sadie:hover h2::after,
   #work .grid figure.effect-sadie:focus h2::after,
   #work .grid figure.effect-sadie.hovered h2::after {
@@ -968,12 +968,12 @@ a {
   #work .grid figure.effect-sadie:hover ul,
   #work .grid figure.effect-sadie.hovered figcaption::before,
   #work .grid figure.effect-sadie.hovered ul {
-    opacity: 1;
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    opacity: 1; }
 
 #skills .background {
   -webkit-background-size: cover;
@@ -1073,6 +1073,11 @@ a {
       width: 55px;
       margin: 10px auto; }
     #timeline .side .item {
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
       background-color: #4F5E7F;
       padding: 15px;
       border-radius: 20px 0 20px 0;
@@ -1083,12 +1088,7 @@ a {
       position: absolute;
       right: 0;
       left: 0;
-      top: 50%;
-      -moz-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      top: 50%; }
       #timeline .side .item i {
         width: 20px;
         text-align: center;
