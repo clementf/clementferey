@@ -3,13 +3,12 @@
 		<div class="back1" style="background-image:url(/images/experiences/{{data.back}});">
 			<a href="/#timeline" class="go-back">
 				<i class="fa fa-arrow-left"></i>
-			</a>			
+			</a>
 			<h1 class="fade-in-up">{{data.name}}</h1>
 			<h2 class="fade-in-up">{{data.year}}</h2>
 			<h2 class="fade-in-up">{{data.place}}</h2>
 		</div>
 	</div>
-		
 
 	<div class="content center description">
 		<h2>Description</h2>
@@ -24,13 +23,12 @@
 			<div class="icon">
 				<i class="fa fa-code"></i>
 			</div>
-			<ul class="skills">{{#each data.skills}}
-				<li class="fade-in-up wp2 delay-15s">{{this}}</li>
-				{{/each}}			
+			<ul class="skills">
+				{{#each data.skills}}
+					<li class="fade-in-up wp2 delay-15s">{{this}}</li>
+				{{/each}}
 			</ul>
 		</div>
+	</div>
 
-		
-	</div>	
-	
 </div>
